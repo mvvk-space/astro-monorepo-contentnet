@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>Coming soon</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astro Monorepo — Multiple Sites</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 46rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.65;
+  }
+  a { color: #0969da; }
+  @media (prefers-color-scheme: dark) { a { color: #4493f8; } }
+  pre {
+    background: #f6f8fa; border-radius: 6px; padding: 1rem;
+    overflow-x: auto; font-size: 0.875rem;
+  }
+  @media (prefers-color-scheme: dark) { pre { background: #151b23; } }
+  code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+  table { border-collapse: collapse; }
+  th, td { border: 1px solid #d0d7de; padding: 0.375rem 0.75rem; }
+  th { background: #f6f8fa; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #3d444d; } th { background: #151b23; } }
+  h1, h2 { border-bottom: 1px solid #d0d7de; padding-bottom: 0.3em; }
+  @media (prefers-color-scheme: dark) { h1, h2 { border-color: #3d444d; } }
+</style>
+</head>
 <body>
-<h1>This page does not have an index.html set up yet!</h1>
+<h1>Astro Monorepo — Multiple Sites</h1>
+<p>Uses Astro and Turbo to manage multiple sites. Clone this repo to serve as your local development environment for creating an Astro multisite.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/mvvk-space/astro-monorepo-contentnet">mvvk-space/astro-monorepo-contentnet</a></p>
+<h2>Creating a new site</h2>
+<p>Creating a new site is simple — mostly copy-paste:</p>
+<ol>
+<li>Duplicate the <code>_site-template</code> folder found in <code>/apps</code>.</li>
+<li>Rename <code>_site-template</code> to the name of your site.</li>
+<li>Update the <code>package.json</code> in your new <code>/apps</code> directory — all it needs is your site name and the tag that the API needs to fetch for new content.</li>
+</ol>
+<p>That&#39;s it. Then make a new <strong>theme</strong> and give it some <strong>new content</strong>.</p>
+<h2>What&#39;s here</h2>
+<ul>
+<li><code>apps/</code> — the sites (start from the <code>_site-template</code>)</li>
+<li><code>packages/</code> — shared packages</li>
+<li><code>turbo.json</code> — Turbo monorepo task config</li>
+<li><code>.env-template</code> — required environment variables</li>
+<li><code>scripts/</code> — helper scripts</li>
+<li><a href="./consider-adding-from-previous.md">consider-adding-from-previous.md</a> — notes on things to carry over from the previous setup</li>
+</ul>
+
 </body>
 </html>
